@@ -15,12 +15,16 @@
 
 
 <style scoped>
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+
 #nav {
   padding: 30px;
 }
 
 #nav a {
-  font-weight: bold;
+  font-family: 'Zen Tokyo Zoo', cursive;
+  font-weight: normal 400;
   color: #afcae671;
   text-decoration: none;
 
@@ -29,7 +33,6 @@
 #nav a.router-link-exact-active {
   color: #4268b9;
   text-decoration: none;
-  text-shadow: 0em 0em 0.5em rgb(0, 0, 0), 0em 0em 0.2em rgb(20, 6, 230), 0em 0em 0.2em rgb(0, 3, 3);
-  
+  text-shadow: 0em 0em 0.5em rgb(0, 0, 0), 0em 0em 0.2em rgb(20, 6, 230), 0em 0em 0.1em rgb(0, 0, 0);
 }
 </style>
