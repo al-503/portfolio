@@ -11,7 +11,7 @@ import Banner from '@/components/Banner.vue'
 import Nav from '@/components/Nav.vue'
 
 export default {
-  name: 'About',
+  name: 'Contact',
   components: {
     Banner,
     Nav
