@@ -24,6 +24,7 @@
     background-position: center;
     width: 100%;
     height: 300px;
+    text-align: center;
   }
   .name {
     color: white;

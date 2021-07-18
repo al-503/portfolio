@@ -9,8 +9,8 @@
   font-family: 'Josefin Slab', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
+  text-align: center;
 }
 html {
   background-color: rgb(11, 12, 19);
