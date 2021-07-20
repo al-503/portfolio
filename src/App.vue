@@ -13,6 +13,6 @@
   text-align: center;
 }
 html {
-  background-color: rgb(11, 12, 19);
+  background-color: rgb(234, 235, 253);
 }
 </style>

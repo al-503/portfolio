@@ -1,20 +1,16 @@
 <template>
-  <div class="about">
-    <Nav/>
-    <Bio/>
-  </div>
+<Nav/>
+  <h1>ici portfolio</h1>
 </template>
 
 <script>
 // @ is an alias to /src
 import Nav from '@/components/Nav.vue'
-import Bio from '@/components/Bio.vue'
 
 export default {
-  name: 'About',
+  name: 'Portfolio',
   components: {
-    Nav,
-    Bio
+    Nav
   }
 }
 </script>
