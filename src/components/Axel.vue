@@ -1,18 +1,20 @@
 <template>
-  <div class="text">
-    <p> hey i'm </p>
-    <h1 class="mt">Ridray Axel</h1>
-    <h2 class="mt">Web Développeur Junior</h2>
-    <router-link id="button" to="/about">About</router-link>
+  <div class="body">
+    <div class="text">
+      <p> hey i'm </p>
+      <h1 class="mt">Ridray Axel</h1>
+      <h2 class="mt">Web Développeur Junior</h2>
+      <router-link id="button" to="/contact">Contact</router-link>
+    </div>
+    <!--<div class="group">--->
+    <img src="../assets/picture/axel1det.png" alt="axel">
+      <!--<div class="bublle five"></div>-->
+      <!--<div class="bublle four"></div>-->
+      <!--<div class="bublle three"></div>-->
+      <!--<div class="bublle two"></div>-->
+      <!--<div class="bublle one"></div>-->
+    <!--</div>-->
   </div>
-  <div class="group">
-    <div class="bublle one"></div>
-    <div class="bublle two"></div>
-    <div class="bublle three"></div>
-    <div class="bublle four"></div>
-    <div class="bublle five"></div>
-  </div>
-  <img src="../assets/picture/axel1det.png" alt="axel">
 </template>
 
 <script>
@@ -26,29 +28,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
   img {
-    border-radius: 50%;
-    width: 600px;
-    height: 480px;
-    opacity: 1;
+    width: 56%;
+    opacity: 0.9;
+    max-height: 700px;
   }
   p {
-    color: #afcae6e1;
+    color: white;/*#afcae6e1*/
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: -1px -1px 0px rgb(37, 32, 32);
   }
+  .body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   .mt{
-    margin-top: 25px;
+    margin-top: 35px;
+    margin-bottom: 30px;
   }
-  .bublle{
+
+  .text {
+    text-align: justify;
+    margin-left: 60px;
+    font-weight: bold 900;
+
+  }
+
+  #button {
+    font-family: 'Bebas Neue', cursive;
+    width: 500px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 25px;
+    color: #afcae6e1;
+    text-decoration: none;
+    border: solid #afcae6e1;
+    margin-left: 5em;
+  }
+
+  #button:hover{
+    color: #4268b9;
+    border: solid #4268b9;
+  }
+
+  /*test des bulle bleu mais annuler car un peu kitsh*/
+  /*.bublle{
+    position: absolute;
     width: 480px;
     height: 480px;
     border-radius: 50%;
-     background-color: rgb(49, 209, 209); 
+    background-color: rgb(49, 209, 209); 
     box-shadow: inset -3em -3em 3em rgba(10, 9, 66, 0.26), inset 0em 0em 0.5em rgba(15, 29, 36, 0.671), inset 0em 0em 5em rgb(10, 10, 32);
   }
   .one {
+    top: 180px;
+    right: 25px;
     width: 480px;
     height: 480px;
   }
   .two {
+    top: 180px;
+    right: 25px;
     width: 240px;
     height: 240px;
   }
@@ -63,22 +104,5 @@
   .five {
     width: 30px;
     height: 30px;
-  }
-  .text {
-    text-align: justify;
-  }
-  #button {
-    font-family: 'Bebas Neue', cursive;
-    width: 500px;
-    padding: 8px 16px 8px 16px;
-    border-radius: 25px;
-    color: #afcae6e1;
-    text-decoration: none;
-    border: solid #afcae6e1;
-    margin-left: 5em;
-  }
-  #button:hover{
-    color: #4268b9;
-    border: solid #4268b9;
-  }
+  }*/
 </style>
