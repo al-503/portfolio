@@ -22,7 +22,10 @@
 #nav {
   text-align: center;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
+  width: 40%;
+  margin-left:60%;
+
 }
 
 a {
@@ -32,6 +35,7 @@ a {
 #nav a {
   font-family: 'Bebas Neue', cursive;
   font-weight: normal 400;
+  font-size: 28px;
   color: #afcae6e1;
   text-decoration: none;
 }

@@ -34,10 +34,10 @@ export default {
     max-height: 700px;
   }
   p {
-    color: white;/*#afcae6e1*/
+    color:#87a0bb;/*#afcae6e1*/ 
     font-size: 2em;
     font-weight: bold;
-    text-shadow: -1px -1px 0px rgb(37, 32, 32);
+    /*text-shadow: -1px -1px 0px rgb(37, 32, 32);*/
   }
   .body {
     display: flex;
