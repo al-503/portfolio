@@ -7,7 +7,7 @@
       <router-link id="button" to="/contact">Contact</router-link>
     </div>
     <!--<div class="group">--->
-    <img src="../assets/picture/axel1det.png" alt="axel">
+    <img src="../assets/picture/axeldet3.png" alt="axel">
       <!--<div class="bublle five"></div>-->
       <!--<div class="bublle four"></div>-->
       <!--<div class="bublle three"></div>-->
@@ -29,9 +29,9 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
   img {
-    width: 56%;
+    width: 42%;
     opacity: 0.9;
-    max-height: 700px;
+    margin-right: 150px;
   }
   p {
     color:#87a0bb;/*#afcae6e1*/ 
@@ -41,7 +41,7 @@ export default {
   }
   .body {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -52,7 +52,7 @@ export default {
 
   .text {
     text-align: justify;
-    margin-left: 60px;
+    margin-left: 200px;
     font-weight: bold 900;
 
   }
