@@ -3,7 +3,7 @@
     <div class="text">
       <p> hey i'm </p>
       <h1 class="mt">Ridray Axel</h1>
-      <h2 class="mt">Web Développeur Junior</h2>
+      <h2 class="mt"><span class="autotext">Cooking Chef</span><span class="cursor" :class="{'typing':typeStatus}">&nbsp;</span></h2>
       <router-link id="button" to="/contact">Contact</router-link>
     </div>
     <!--<div class="group">--->
@@ -18,9 +18,10 @@
 </template>
 
 <script>
-  export default {
-    name: 'Axel',
-  }
+
+export default {
+  name: 'Axel',
+}
 </script>
 
 
@@ -70,6 +71,28 @@
   #button:hover{
     color: #4268b9;
     border: solid #4268b9;
+  }
+
+  span.autotext {
+    color: black;
+  }
+
+  span.cursor {
+    display: inline-block;
+    margin-left: 3px;
+    width: 2px;
+    background-color: black;
+    animation: cursorBlink 1s infinite;/*step-end*/
+  }
+
+  span.cursor.typing {
+    animation: none;
+  }
+
+  @keyframes cursorBlink{
+    49%{ background-color: black; }
+    50%{ background-color: transparent; }
+    99%{ background-color: transparent; }
   }
 
   /*test des bulle bleu mais annuler car un peu kitsh*/
