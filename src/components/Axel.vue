@@ -14,6 +14,7 @@
       <!--<div class="bublle two"></div>-->
       <!--<div class="bublle one"></div>-->
     <!--</div>-->
+    <vue-typer text='plop'></vue-typer>
   </div>
 </template>
 
