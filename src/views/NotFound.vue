@@ -1,6 +1,15 @@
 <template>
-  <h1>hello 404</h1>
+ <Error/>
 </template>
 
-<style scoped>
-</style>
+<script>
+// @ is an alias to /src
+import Error from '@/components/Error.vue'
+
+export default {
+  name: 'NotFound',
+  components: {
+    Error
+  }
+}
+</script>

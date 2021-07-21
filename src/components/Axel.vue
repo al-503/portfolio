@@ -29,7 +29,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
   img {
-    width: 42%;
+    width: 41%;
     opacity: 0.9;
     margin-right: 150px;
   }
