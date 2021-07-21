@@ -1,20 +1,24 @@
 <template>
   <div class="body">
-    <div class="text">
+      <img class="logo" src="../assets/picture/logo.png" alt="Vue.js">
+      <div class="text">
       <p> hey i'm </p>
       <h1 class="mt">Ridray Axel</h1>
-      <h2 class="mt"><span class="autotext">Cooking Chef</span><span class="cursor" :class="{'typing':typeStatus}">&nbsp;</span></h2>
+      <h2 class="mt"><span class="autotext">Web Developpeur Junior</span></h2>
       <router-link id="button" to="/contact">Contact</router-link>
+      <ul>
+          <li><a href="https://github.com/al-503" target="_blank"><i class="fab fa-github-square"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/axel-ridray-045733205/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
     </div>
     <!--<div class="group">--->
-    <img src="../assets/picture/axeldet3.png" alt="axel">
+    <img class="portrait" src="../assets/picture/axeldet3.png" alt="axel">
       <!--<div class="bublle five"></div>-->
       <!--<div class="bublle four"></div>-->
       <!--<div class="bublle three"></div>-->
       <!--<div class="bublle two"></div>-->
       <!--<div class="bublle one"></div>-->
     <!--</div>-->
-    <vue-typer text='plop'></vue-typer>
   </div>
 </template>
 
@@ -29,17 +33,44 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-  img {
+  .portrait {
     width: 41%;
     opacity: 0.9;
     margin-right: 150px;
   }
+
   p {
     color:#87a0bb;/*#afcae6e1*/ 
     font-size: 2em;
     font-weight: bold;
     /*text-shadow: -1px -1px 0px rgb(37, 32, 32);*/
   }
+
+  ul {
+    position: relative;
+    top: 150px;
+    right: 236px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  i {
+    color: #4268b9;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    background-image: url('/assets/picture/logo.png');
+    width: 3%;
+  }
+
   .body {
     display: flex;
     justify-content: space-between;
@@ -55,7 +86,6 @@ export default {
     text-align: justify;
     margin-left: 200px;
     font-weight: bold 900;
-
   }
 
   #button {

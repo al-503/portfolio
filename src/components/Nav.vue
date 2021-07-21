@@ -25,6 +25,7 @@
   justify-content: space-evenly;
   width: 40%;
   margin-left:60%;
+  position: sticky;
 
 }
 
