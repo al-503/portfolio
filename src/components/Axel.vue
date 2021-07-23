@@ -5,7 +5,7 @@
       <p> hey i'm </p>
       <h1 class="mt">Ridray Axel</h1>
       <h2 class="mt"><span class="autotext">Web Developpeur Junior</span></h2>
-      <router-link id="button" to="/contact">Contact</router-link>
+      <router-link id="button" to="/portfolio">Projects</router-link>
       <ul>
           <li><a href="https://github.com/al-503" target="_blank"><i class="fab fa-github-square"></i></a></li>
           <li><a href="https://www.linkedin.com/in/axel-ridray-045733205/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
@@ -23,10 +23,9 @@
 </template>
 
 <script>
-
-export default {
-  name: 'Axel',
-}
+  export default {
+    name: 'Axel',
+  }
 </script>
 
 
