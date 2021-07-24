@@ -1,12 +1,14 @@
 <template>
   <div class="body">
-      <img class="logo" src="../assets/picture/logo.png" alt="Vue.js">
-      <div class="text">
+    <img class="logo" src="../assets/picture/logo.png" alt="Vue.js">
+
+    <div class="text">
       <p> hey i'm </p>
       <h1 class="mt">Ridray Axel</h1>
-      <h2 class="mt"><span class="autotext">Web Developpeur Junior</span></h2>
-      <router-link id="button" to="/portfolio">Projects</router-link>
+      <h2 class="mt"><span>Web Developpeur Junior</span></h2>
+      <router-link id="button" to="/projects">Projects</router-link>
       <ul>
+          <li><i class="far fa-envelope"></i></li>
           <li><a href="https://github.com/al-503" target="_blank"><i class="fab fa-github-square"></i></a></li>
           <li><a href="https://www.linkedin.com/in/axel-ridray-045733205/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
       </ul>
@@ -47,7 +49,7 @@
 
   ul {
     position: relative;
-    top: 150px;
+    top: 140px;
     right: 236px;
     list-style: none;
     display: flex;
@@ -103,27 +105,10 @@
     border: solid #4268b9;
   }
 
-  span.autotext {
-    color: black;
-  }
+ 
+ 
 
-  span.cursor {
-    display: inline-block;
-    margin-left: 3px;
-    width: 2px;
-    background-color: black;
-    animation: cursorBlink 1s infinite;/*step-end*/
-  }
-
-  span.cursor.typing {
-    animation: none;
-  }
-
-  @keyframes cursorBlink{
-    49%{ background-color: black; }
-    50%{ background-color: transparent; }
-    99%{ background-color: transparent; }
-  }
+  
 
   /*test des bulle bleu mais annuler car un peu kitsh*/
   /*.bublle{

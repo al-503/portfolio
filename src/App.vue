@@ -15,5 +15,6 @@
 html {
   background-color: rgb(234, 235, 253);
   height: 100%;
+  width: 100%;
 }
 </style>
