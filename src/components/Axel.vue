@@ -8,7 +8,7 @@
       <h2 class="mt"><span>Web Developpeur Junior</span></h2>
       <router-link id="button" to="/projects">Projects</router-link>
       <ul>
-          <li><i class="far fa-envelope"></i></li>
+          <li v-on:click="say('axel.ridray@sfr.fr')"><i class="far fa-envelope"></i></li>
           <li><a href="https://github.com/al-503" target="_blank"><i class="fab fa-github-square"></i></a></li>
           <li><a href="https://www.linkedin.com/in/axel-ridray-045733205/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
       </ul>
@@ -27,6 +27,12 @@
 <script>
   export default {
     name: 'Axel',
+
+    methods: {
+      say: function (message) {
+        alert(message)
+      }
+    }
   }
 </script>
 
@@ -103,6 +109,10 @@
   #button:hover{
     color: #4268b9;
     border: solid #4268b9;
+  }
+
+  .fa-envelope {
+    cursor: pointer;
   }
 
  
