@@ -1,10 +1,9 @@
 <template>
-<h2>ceci sont les projets </h2>
 </template>
 
 <script>
   export default {
-    name: 'Projet',
+    name: 'Projet'
   }
 </script>
 

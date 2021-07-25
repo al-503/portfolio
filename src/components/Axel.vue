@@ -3,9 +3,9 @@
     <img class="logo" src="../assets/picture/logo.png" alt="Vue.js">
 
     <div class="text">
-      <p> hey i'm </p>
-      <h1 class="mt">Ridray Axel</h1>
-      <h2 class="mt"><span>Web Developpeur Junior</span></h2>
+      <p class="ho"> hey i'm </p>
+      <h1 class="mt ho">Ridray Axel</h1>
+      <h2 class="mt ho"><span>Web Developpeur - Junior</span></h2>
       <router-link id="button" to="/projects">Projects</router-link>
       <ul>
           <li v-on:click="say('axel.ridray@sfr.fr')"><i class="far fa-envelope"></i></li>
@@ -115,7 +115,9 @@
     cursor: pointer;
   }
 
- 
+  .ho {
+    cursor: default;
+  }
  
 
   
