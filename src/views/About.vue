@@ -1,21 +1,20 @@
 <template>
     <Nav/>
     <div class="content">
-      <img class="portrait" src="" alt="axel">
        
       <div class="texte">
-        <p> Hey ! i'm axel a Web Developper Front end Junior.
-            After 10 years work in a kitchen, 
-            in a pandemic time i decide to change my life to became a développer 
+        <p> Salut ! Je m'appelle Axel, ancien cuisinier en 2021 je me suis reconvertie
+            dans le développement Web grâce à la formation du wagon et
+            je m'intéresse aux Front End mais j'apprécie aussi le Back end !
         </p>
         <div class="langages">
           <div class="langage">
             <h3>Front End</h3>
               <ul>
-                <li>notion of Vue.js</li>
-                <li>Jvascript</li>
+                <li>notion de Vue.js</li>
+                <li> Base de Jvascript</li>
                 <li>HTML</li>
-                <li>CSS and notion of SCSS</li>
+                <li>CSS et notion de SCSS</li>
               </ul>
           </div>
 
@@ -46,7 +45,7 @@ export default {
 <style scoped>
   p {
     font-size: 30px;
-    width: 400px;
+    width: 490px;
     font-weight: 600;
   }
   .content {
@@ -62,10 +61,11 @@ export default {
 
   .langages {
     display: flex;
+    justify-content: space-around;
   }
 
   .langage {
-    color: blue;
+    color: #4268b9;
     justify-content: center;
     align-items: center;
     margin: 16px;
@@ -83,8 +83,9 @@ export default {
 
   li {
     list-style: none;
-    color: blue;
+    color: #4268b9;
     font-weight: 900;
+    padding: 8px;
   }
 
 </style>

@@ -3,10 +3,9 @@
     <img class="logo" src="../assets/picture/logo.png" alt="Vue.js">
 
     <div class="text">
-      <p class="ho"> hey i'm </p>
       <h1 class="mt ho">Ridray Axel</h1>
       <h2 class="mt ho"><span>Web Developpeur - Junior</span></h2>
-      <router-link id="button" to="/projects">Projects</router-link>
+      <router-link id="button" to="/projects">Projets</router-link>
       <ul>
           <li v-on:click="say('axel.ridray@sfr.fr')"><i class="far fa-envelope"></i></li>
           <li><a href="https://github.com/al-503" target="_blank"><i class="fab fa-github-square"></i></a></li>

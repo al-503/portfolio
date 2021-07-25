@@ -1,6 +1,6 @@
 <template>
-  <h1><span>404</span> Not Found . . .</h1>
-  <router-link to="/">Back Home</router-link>
+  <h1><span>404</span> Oups . . .</h1>
+  <router-link to="/">Accueil</router-link>
 </template>
 
 <script>
