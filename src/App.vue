@@ -3,7 +3,12 @@
 </template>
 
 <style>
+  /*Naming home*/
   @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap');
+  /* nav and cards project*/
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  /* list langages & about me*/
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300&display=swap');
 
   #app {
   font-family: 'Josefin Slab', Helvetica, Arial, sans-serif;

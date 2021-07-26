@@ -27,8 +27,6 @@
 
 <style scoped>
 
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300&display=swap');
   .langages {
     display: flex;
     justify-content: space-around;

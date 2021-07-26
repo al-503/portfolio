@@ -16,8 +16,6 @@
 
 <style scoped>
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 #nav {
   text-align: center;
   display: flex;

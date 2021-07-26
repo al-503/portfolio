@@ -13,6 +13,7 @@ export default {
 <style scoped>
 
   h1 {
+    font-family: 'Bebas Neue', cursive;
     text-align: center;
     margin-top: 5em;
     color: rgb(22, 22, 126);
