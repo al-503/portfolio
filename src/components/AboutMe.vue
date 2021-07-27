@@ -12,8 +12,6 @@
 </script>
 
 <style scoped>
-  
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300&display=swap');
 
   p {
     font-size: 25px;

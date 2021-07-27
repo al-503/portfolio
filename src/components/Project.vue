@@ -1,15 +1,15 @@
 <template>
+  <a :href="project.web">
+    <div class="project">
+      <!------insert picture whit data in vue.js----->
+      <img :src="project.src" class="image"/>
 
-  <div class="project">
-    <!------insert picture whit data in vue.js----->
-    <img :src="project.src" class="image"/>
-
-    <div class="project-text">
-      <h2>{{ project.title }}</h2>
-      <p>{{ project.desc }}</p>
+      <div class="project-text">
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.desc }}</p>
+      </div>
     </div>
-  </div>
-
+  </a>
 </template>
 
 <script>
@@ -54,5 +54,10 @@
     margin: 4px;
     font-weight: 400;
     font-family: 'Noto Sans JP', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 </style>
