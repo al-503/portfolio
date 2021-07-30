@@ -76,4 +76,35 @@
 
 } /* media querie desktop*/
 
+/* media for phone*/
+
+@media all and (min-width: 320px) and (max-width: 600px) {
+
+ #nav {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  a {
+    padding: 4px;
+  }
+
+  #nav a {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal 400;
+    font-size: 18px;
+    color: #afcae6e1;
+    text-decoration: none;
+  }
+
+  #nav a.router-link-exact-active {
+    color: #4268b9;
+    text-decoration: none;
+  }
+}
+
+/* end of phone media*/ 
 </style>

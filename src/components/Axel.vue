@@ -66,6 +66,8 @@
   }
 
   .body {
+    height: auto;
+    width: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -132,7 +134,7 @@
   .portrait {
     position: relative;
     top: 70px;
-    width: 89%;
+    width: 72%;
     opacity: 0.9;
   }
 
@@ -145,7 +147,7 @@
 
   .logo {
     position: absolute;
-    top: 20px;
+    top: 1%;
     left: 16px;
     background-image: url('/assets/picture/logo.png');
     width: 6%;
@@ -162,7 +164,7 @@
   }
 
   .text {
-    margin: 50px auto;
+    margin: 8% auto;
     text-align: center;
     font-weight: bold 900;
   }
@@ -198,7 +200,84 @@
   }
  
 } /* fin des media tablettes*/
+
+  /* media for phone*/
+@media all and (min-width: 320px) and (max-width: 600px) {
+
+  .body {
+    margin: 16% auto;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   
+  .portrait {
+    position: relative;
+    width: 70%;
+    opacity: 0.9;
+  }
+
+  p {
+    color:#87a0bb;/*#afcae6e1*/ 
+    font-size: 2em;
+    font-weight: bold;
+    /*text-shadow: -1px -1px 0px rgb(37, 32, 32);*/
+  }
+
+  .logo {
+    position: absolute;
+    top: 1%;
+    left: 16px;
+    background-image: url('/assets/picture/logo.png');
+    width: 6%;
+  }
+
+
+  .mt{
+    margin-top: 35px;
+    margin-bottom: 30px;
+  }
+
+  .text {
+    margin: 0px auto;
+    text-align: center;
+    font-weight: bold 900;
+  }
+
+  #button {
+    font-family: 'Bebas Neue', cursive;
+    width: 500px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 25px;
+    color: #0a75e9e1;
+    text-decoration: none;
+    border: solid #0a75e9e1;
+  }
+
+  span {
+    margin-bottom: 20px;
+  }
+
+   ul {
+    width: auto;
+    margin: 5px auto;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  i {
+    color: #4268b9;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+   
+}
+
 
   /*test des bulle bleu mais annuler car un peu kitsh*/
   /*.bublle{
