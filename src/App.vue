@@ -16,10 +16,11 @@
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   text-align: center;
-}
-html {
-  background-color: rgb(234, 235, 253);
-  height: 100%;
-  width: 100%;
-}
+  }
+
+  html {
+    background-color: rgb(234, 235, 253);
+    height: 100%;
+    width: 100%;
+  }
 </style>

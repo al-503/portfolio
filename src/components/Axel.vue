@@ -6,7 +6,13 @@
       <h1 class="mt ho">Ridray Axel</h1>
       <h2 class="mt ho"><span>Web Developpeur - Junior</span></h2>
       <router-link id="button" to="/projects">Projets</router-link>
-      <Social/>
+    
+      <ul>
+        <li v-on:click="say('axel.ridray@sfr.fr')"><i class="far fa-envelope"></i></li>
+        <li><a href="https://github.com/al-503" target="_blank"><i class="fab fa-github-square"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/axel-ridray-045733205/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+
     </div>
     <!--<div class="group">--->
     <img class="portrait" src="../assets/picture/axeldet3.png" alt="axel">
@@ -20,12 +26,9 @@
 </template>
 
 <script>
-import Social from "@/components/Social.vue";
 
   export default {
     name: 'Axel',
-
-    components: { Social },
 
     methods: {
       say: function (message) {
@@ -37,7 +40,9 @@ import Social from "@/components/Social.vue";
 
 
 <style scoped>
-
+     /* Media pour desktop*/
+@media all and (min-width: 1024px) and (max-width: 1920px) {
+  
 
   .portrait {
     width: 41%;
@@ -96,8 +101,103 @@ import Social from "@/components/Social.vue";
   .ho {
     cursor: default;
   }
- 
 
+   ul {
+    position: relative;
+    top: 140px;
+    right: 236px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  i {
+    color: #4268b9;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .fa-envelope {
+    cursor: pointer;
+  }
+}
+    /*fin de la query desktop*/ 
+
+    /*Media pour tablette*/
+
+@media all and (min-width: 600px) and (max-width: 1024px) {
+
+  .portrait {
+    position: relative;
+    top: 70px;
+    width: 89%;
+    opacity: 0.9;
+  }
+
+  p {
+    color:#87a0bb;/*#afcae6e1*/ 
+    font-size: 2em;
+    font-weight: bold;
+    /*text-shadow: -1px -1px 0px rgb(37, 32, 32);*/
+  }
+
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    background-image: url('/assets/picture/logo.png');
+    width: 6%;
+  }
+
+  .body {
+    height: auto;
+    width: auto;
+  }
+
+  .mt{
+    margin-top: 35px;
+    margin-bottom: 30px;
+  }
+
+  .text {
+    margin: 50px auto;
+    text-align: center;
+    font-weight: bold 900;
+  }
+
+  #button {
+    font-family: 'Bebas Neue', cursive;
+    width: 500px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 25px;
+    color: #0a75e9e1;
+    text-decoration: none;
+    border: solid #0a75e9e1;
+  }
+
+  span {
+    margin-bottom: 20px;
+  }
+
+   ul {
+    width: 25%;
+    margin: 25px auto;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  i {
+    color: #4268b9;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+ 
+} /* fin des media tablettes*/
   
 
   /*test des bulle bleu mais annuler car un peu kitsh*/
