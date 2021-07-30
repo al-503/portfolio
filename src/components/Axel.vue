@@ -6,11 +6,7 @@
       <h1 class="mt ho">Ridray Axel</h1>
       <h2 class="mt ho"><span>Web Developpeur - Junior</span></h2>
       <router-link id="button" to="/projects">Projets</router-link>
-      <ul>
-          <li v-on:click="say('axel.ridray@sfr.fr')"><i class="far fa-envelope"></i></li>
-          <li><a href="https://github.com/al-503" target="_blank"><i class="fab fa-github-square"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/axel-ridray-045733205/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-      </ul>
+      <Social/>
     </div>
     <!--<div class="group">--->
     <img class="portrait" src="../assets/picture/axeldet3.png" alt="axel">
@@ -24,8 +20,12 @@
 </template>
 
 <script>
+import Social from "@/components/Social.vue";
+
   export default {
     name: 'Axel',
+
+    components: { Social },
 
     methods: {
       say: function (message) {
@@ -50,23 +50,6 @@
     font-size: 2em;
     font-weight: bold;
     /*text-shadow: -1px -1px 0px rgb(37, 32, 32);*/
-  }
-
-  ul {
-    position: relative;
-    top: 140px;
-    right: 236px;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 0;
-  }
-
-  i {
-    color: #4268b9;
-    font-size: 30px;
-    margin-top: 20px;
   }
 
   .logo {
@@ -108,10 +91,6 @@
   #button:hover{
     color: #4268b9;
     border: solid #4268b9;
-  }
-
-  .fa-envelope {
-    cursor: pointer;
   }
 
   .ho {

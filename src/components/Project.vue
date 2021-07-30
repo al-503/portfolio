@@ -20,7 +20,9 @@
 </script>
 
 <style scoped>
-
+  .lang {
+    width: 8%;
+  }
   .project {
     margin: 8px auto;
     margin-top: 80px;

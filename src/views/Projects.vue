@@ -24,7 +24,7 @@
            title: 'Col.',
            desc: 'Progressive Web App pour aider les utilisateurs pour trouver une colocation .',
            src: require('../assets/picture/col3.png'),
-           web: 'https://www.col.eu.com/'
+           web: 'https://www.col.eu.com/',
           },
           {
            title: 'Retro_World',
