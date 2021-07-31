@@ -48,6 +48,7 @@
     width: 41%;
     opacity: 0.9;
     margin-right: 150px;
+    animation: fadein 14s;
   }
 
   p {
@@ -89,10 +90,11 @@
     width: 500px;
     padding: 8px 16px 8px 16px;
     border-radius: 25px;
-    color: #afcae6e1;
+    color: #4268b9;
     text-decoration: none;
-    border: solid #afcae6e1;
+    border: solid #4268b9;
     margin-left: 5em;
+    animation: fadein 18s;
   }
 
   #button:hover{
@@ -124,6 +126,23 @@
   .fa-envelope {
     cursor: pointer;
   }
+
+  h1 {
+    animation: fadein 2s;
+  }
+
+  span {
+    animation: fadein 8s;
+  }
+
+  @keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
 }
     /*fin de la query desktop*/ 
 
