@@ -48,7 +48,7 @@
     width: 41%;
     opacity: 0.9;
     margin-right: 150px;
-    animation: fadein 14s;
+    animation: fadein 12s;
   }
 
   p {
@@ -94,7 +94,7 @@
     text-decoration: none;
     border: solid #4a6fc0;
     margin-left: 5em;
-    animation: fadein 18s;
+    animation: fadein 16s;
   }
 
   #button:hover{
@@ -128,11 +128,11 @@
   }
 
   h1 {
-    animation: fadein 2s;
+    animation: fadein 1s;
   }
 
   span {
-    animation: fadein 8s;
+    animation: fadein 6s;
   }
 
   @keyframes fadein {
