@@ -1,10 +1,13 @@
 <template>
   <Nav/>
-  <Project
-    v-for="project in projects"
-    :key="project.title"
-    :project="project"
-  />
+
+  <div class="projects">
+    <Project
+      v-for="project in projects"
+      :key="project.title"
+      :project="project"
+    />
+  </div>
 </template>
 
 <script>
@@ -37,3 +40,15 @@
     }
   }
 </script>
+
+<style scoped>
+  .projects {
+    margin: 20px auto;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center
+  }
+</style>

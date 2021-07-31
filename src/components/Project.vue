@@ -1,12 +1,14 @@
 <template>
   <a :href="project.web">
     <div class="project">
+      <div class="border">
       <!------insert picture whit data in vue.js----->
-      <img :src="project.src" class="image"/>
+        <img :src="project.src" class="image"/>
 
-      <div class="project-text">
-        <h2>{{ project.title }}</h2>
-        <p>{{ project.desc }}</p>
+        <div class="project-text">
+          <h2>{{ project.title }}</h2>
+          <p>{{ project.desc }}</p>
+        </div>
       </div>
     </div>
   </a>
@@ -20,28 +22,28 @@
 </script>
 
 <style scoped>
-  .lang {
-    width: 8%;
-  }
+
   .project {
-    margin: 8px auto;
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
-    width: 400px;
-    height: 22%;
-    border-radius: 2%;
-    box-shadow: 2px 2px 2px #4268b9;
-    background-color: #c2d5ff;
+    margin: 4px auto;
+    width: 210px;
+    height: 310px;
+    padding: 2px;
+    background-color: white;
+    border-radius: 2px;
+    
   }
 
-  .project:hover {
-    box-shadow: 2px 2px 1px #4268b9, 3px 3px 4px #4268b9;
+  .border {
+    margin: 4px auto;
+    width: 200px;
+    height: 300px; 
+    background-color: #ffffff;
+    border: 1px solid blue;
   }
 
   .image {
-    width: 30%;
-    height: 30%;
+    width: 20%;
+    height: 20%;
     padding: 4px;
   }
 
