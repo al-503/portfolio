@@ -90,16 +90,16 @@
     width: 500px;
     padding: 8px 16px 8px 16px;
     border-radius: 25px;
-    color: #4268b9;
+    color: #4a6fc0;
     text-decoration: none;
-    border: solid #4268b9;
+    border: solid #4a6fc0;
     margin-left: 5em;
     animation: fadein 18s;
   }
 
   #button:hover{
-    color: #4268b9;
-    border: solid #4268b9;
+    color: #213c77;
+    border: solid #213c77;
   }
 
   .ho {
