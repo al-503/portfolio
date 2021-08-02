@@ -1,18 +1,18 @@
 <template>
   <a :href="project.web">
     <div class="project">
-      <div class="border">
-      <!------insert picture whit data in vue.js----->
-        <img :src="project.src"/>
 
-        <div class="line">
-          <h2>{{ project.title }}</h2>
-        </div>
-
-        <div class="project-text">
-          <p>{{ project.desc }}</p>
-        </div>
+    <!------insert picture whit data in vue.js----->
+      <img  :src="project.src"/>
+    
+      <div class="line">
+        <h2>{{ project.title }}</h2>
       </div>
+
+      <div class="card-content">
+        <p>{{ project.desc }}</p>
+      </div>
+
     </div>
   </a>
 </template>
@@ -31,17 +31,30 @@
     width: 210px;
     height: 310px;
     padding: 2px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 2px;
-    
+    transition: transform 500ms ease;
+    overflow: hidden;
   }
 
-  .border {
-    margin: 4px auto;
-    width: 200px;
-    height: 300px; 
-    background-color: #ffffff;
-    border: 1px solid blue;
+  .project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 2px rgb(82, 83, 163);
+  }
+
+  .project:hover .card-content {
+    transform: translateY(0);
+    transition: transform 500ms ease;
+  }
+
+  .project:hover img {
+    transform: translateY(0);
+    transition: transform 500ms ease;
+  }
+
+  .project:hover .line {
+    transform: translateY(0);
+    transition: transform 500ms ease;
   }
 
   img {
@@ -49,33 +62,51 @@
     width: 150px;
     height: 150px;
     background-color: #4268b9;
+    transform: translateY(20%);
+    transition: transform 500ms ease;
   }
 
   .line {
-    margin: 4px auto;
+    margin: 20px auto;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     width: 50%;
+    transform: translateY(100%);
+    transition: transform 500ms ease;
   }
 
   h2 {
     font-family: 'Bebas Neue', cursive;
-    margin: 0 auto;
+    margin: 2px auto;
     font-size: 16px;
+  }
+
+  .card-content {
+    transform: translateY(80%);
+    transition: transform 500ms ease;
   }
 
   p {
     text-align: justify;
-    padding: 4px;
-    margin: 4px;
+    margin: 18px auto;
     font-weight: 400;
     font-family: 'Noto Sans JP', sans-serif;
     padding: 8px;
+    background-color: transparent;
   }
-  
+
   a {
     text-decoration: none;
     color: inherit;
+    margin: 0 auto;
   }
 
+    @keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+  }
 </style>

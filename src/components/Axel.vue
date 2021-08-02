@@ -51,13 +51,6 @@
     animation: fadein 12s;
   }
 
-  p {
-    color:#87a0bb;/*#afcae6e1*/ 
-    font-size: 2em;
-    font-weight: bold;
-    /*text-shadow: -1px -1px 0px rgb(37, 32, 32);*/
-  }
-
   .logo {
     position: absolute;
     top: 20px;
@@ -142,7 +135,7 @@
     to {
         opacity:1;
     }
-}
+  }
 }
     /*fin de la query desktop*/ 
 
