@@ -23,6 +23,11 @@ export default {
 </script>
 
 <style scoped>
+
+  .contact {
+    margin: auto;
+  }
+
   img {
     width: 620px;
     left: 20px;

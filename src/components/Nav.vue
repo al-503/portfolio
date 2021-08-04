@@ -13,7 +13,6 @@
   }
 </script>
 
-
 <style scoped>
 
 @media all and (min-width: 1024px) and (max-width: 1920px) {
