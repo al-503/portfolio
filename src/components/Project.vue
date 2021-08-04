@@ -26,8 +26,10 @@
 
 <style scoped>
 
+@media all and (min-width: 1024px) and (max-width: 1920px) {
+
   .project {
-    margin: 4px auto;
+    margin: 8% auto;
     width: 210px;
     height: 310px;
     padding: 2px;
@@ -61,7 +63,7 @@
     margin: 5px auto;
     width: 150px;
     height: 150px;
-    background-color: #4268b9;
+    background-color: #373e4d;
     transform: translateY(20%);
     transition: transform 500ms ease;
   }
@@ -100,13 +102,100 @@
     color: inherit;
     margin: 0 auto;
   }
+}
 
-    @keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+@media all and (min-width: 600px) and (max-width: 1024px) {
+
+  .project {
+    margin: 8% auto;
+    width: 210px;
+    height: 370px;
+    padding: 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
   }
+
+  img {
+    margin: 16px auto;
+    width: 180px;
+    height: 180px;
+    background-color: #373e4d;
+  }
+
+  .line {
+    margin: 20px auto;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 70%;
+  }
+
+  h2 {
+    font-family: 'Bebas Neue', cursive;
+    margin: 2px auto;
+    font-size: 16px;
+  }
+
+  p {
+    text-align: justify;
+    margin: 18px auto;
+    font-weight: 400;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 8px;
+    background-color: transparent;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 auto;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 600px) {
+
+  .project {
+    margin: 8% auto;
+    width: 210px;
+    height: 370px;
+    padding: 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+  }
+
+  img {
+    margin: 16px auto;
+    width: 180px;
+    height: 180px;
+    background-color: #373e4d;
+  }
+
+  .line {
+    margin: 20px auto;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 70%;
+  }
+
+  h2 {
+    font-family: 'Bebas Neue', cursive;
+    margin: 2px auto;
+    font-size: 16px;
+  }
+
+  p {
+    text-align: justify;
+    margin: 18px auto;
+    font-weight: 400;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 8px;
+    background-color: transparent;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 auto;
+  }
+}
+
 </style>

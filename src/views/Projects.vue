@@ -42,8 +42,9 @@
 </script>
 
 <style scoped>
+
   .projects {
-    margin: 20px auto;
+    margin: 80px auto;
     width: 60%;
     display: flex;
     flex-direction: row;
@@ -51,4 +52,12 @@
     justify-content: space-around;
     align-content: center
   }
+
+@media all and (min-width: 600px) and (max-width: 1024px) {
+
+  .projects {
+    flex-direction: column;
+  }
+  
+}
 </style>
